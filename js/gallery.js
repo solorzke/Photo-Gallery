@@ -43,6 +43,14 @@ function swapPhoto() {
 	var photoDesc = mImages[mCurrentIndex].description;
 	var photoDate = mImages[mCurrentIndex].date;
 	console.log('swap photo');
+	$("#photo").attr("src", mImages[mCurrentIndex].imgPath);
+	console.log(mImages[mCurrentIndex].imgPath);
+	$(".location").text(location + photoLocation);
+	$(".description").text(description + photoDesc);
+	$(".date").text(date + photoDate);
+
+	console.log(photoLocation);
+	console.log(mCurrentIndex + " mCurrentIndex on swapPhoto");
 }
 
 // Counter for the mImages array
