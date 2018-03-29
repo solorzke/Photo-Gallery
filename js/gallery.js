@@ -55,6 +55,8 @@ var mImages = [];
 // Holds the retrived JSON information
 var mJson = JSON.parse(mRequest.responseText);
 mRequest.open("GET", mURL, true);
+mRequest.send();
+
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = 'insert_url_here_to_image_json';
