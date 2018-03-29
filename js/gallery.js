@@ -31,6 +31,8 @@ function animate() {
 }
 
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
+// Counter for the mImages array
+var mCurrentIndex = null;
 
 function swapPhoto() {
 	if(mCurrentIndex == null){
@@ -61,8 +63,6 @@ function swapPhoto() {
 	console.log(mCurrentIndex + " mCurrentIndex on swapPhoto");
 }
 
-// Counter for the mImages array
-var mCurrentIndex = 0;
 
 // XMLHttpRequest variable
 var mURL = "images.json";
