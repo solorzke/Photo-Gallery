@@ -47,11 +47,13 @@ var mCurrentIndex = 0;
 var mURL = "images.json";
 var mRequest = new XMLHttpRequest();
 
+
+
 // Array holding GalleryImage objects (see below).
 var mImages = [];
 
 // Holds the retrived JSON information
-var mJson;
+var mJson = JSON.parse(mRequest.responseText);
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
