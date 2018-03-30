@@ -128,6 +128,11 @@ $(document).ready( function() {
 	$('img.moreIndicator').click( function(){
 		$('.details').eq(0).toggle();
 	});
+
+	$(".moreIndicator").click( function(){
+		if( $(".moreIndicator").hasClass("rot90")){
+			$(".moreIndicator").attr("class", "moreIndicator rot270");
+		}
 	
 });
 
