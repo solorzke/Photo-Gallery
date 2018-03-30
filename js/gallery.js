@@ -137,6 +137,12 @@ $(document).ready( function() {
 			$(".moreIndicator").attr("class", "moreIndicator rot90");
 		};
 	});
+
+	$('#prevPhoto').click( function(){
+		mLastFrameTime = 0;
+		PrevPhoto();
+		animate();
+	});
 	
 });
 
