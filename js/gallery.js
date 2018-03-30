@@ -133,6 +133,10 @@ $(document).ready( function() {
 		if( $(".moreIndicator").hasClass("rot90")){
 			$(".moreIndicator").attr("class", "moreIndicator rot270");
 		}
+		else{
+			$(".moreIndicator").attr("class", "moreIndicator rot90");
+		};
+	});
 	
 });
 
