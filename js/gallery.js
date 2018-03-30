@@ -143,6 +143,12 @@ $(document).ready( function() {
 		PrevPhoto();
 		animate();
 	});
+
+	$('#nextPhoto').click(function(){
+		mLastFrameTime = 0;
+		swapPhoto();
+		animate();
+	});
 	
 });
 
