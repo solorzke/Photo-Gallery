@@ -83,6 +83,9 @@ function PrevPhoto(){
 var mURL = "images.json";
 var mRequest = new XMLHttpRequest();
 
+var mURL2 = "extra.json";
+var mRequest2 = new XMLHttpRequest();
+
 // Array holding GalleryImage objects (see below).
 var mImages = [];
 
@@ -110,6 +113,9 @@ mRequest.onreadystatechange = function() {
 
 mRequest.open("GET", mURL, true);
 mRequest.send();
+
+mRequest2.open("GET", mURL2, true);
+mRequest2.send();
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
