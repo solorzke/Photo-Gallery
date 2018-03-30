@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "img/places/london.jpg",
+            "imgLocation": "England",
+            "description": "Big Ben Clocktower",
+            "date": "02/01/2016"
+        },
+        {
+            "imgPath": "img/places/nyc.jpg",
+            "imgLocation": "New York City",
+            "description": "Statue of Liberty",
+            "date": "03/02/2016"
+        },
+        {
+            "imgPath": "img/places/china.jpg",
+            "imgLocation": "China",
+            "description": "Great Wall of China",
+            "date": "01/04/2016"
+        },
+        {
+            "imgPath": "img/places/egypt.jpg",
+            "imgLocation": "Egypt",
+            "description": "Sphinx",
+            "date": "01/09/2016"
+        },
+        {
+            "imgPath": "img/places/russia.jpg",
+            "imgLocation": "Russia",
+            "description": "Red Square",
+            "date": "01/15/2016"
+        }
+  ]
+}
