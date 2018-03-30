@@ -111,6 +111,27 @@ mRequest.onreadystatechange = function() {
   }
 };
 
+mRequest2.onreadystatechange = function() {
+  // Do something interesting if file is opened successfully
+  if (mRequest2.readyState == 4 && mRequest2.status == 200) {
+    try {
+      // Let’s try and see if we can parse JSON
+      var mJson2 = JSON.parse(mRequest2.responseText);
+
+      for (var i = 0; i < mJson2.images.length; i++){
+      	mImages.push(new GalleryImage(mJson2.images[i].imgPath, mJson2.images[i].imgLocation, mJson2.images[i].description, mJson2.images[i].date));
+      }
+      // Let’s print out the JSON; It will likely show as “obj”
+      console.log(mJson2.images);
+      console.log(mJson2.images[0].imgPath);
+
+     
+    } catch (err) {
+      console.log(err.message)
+    }
+  }
+};
+
 mRequest.open("GET", mURL, true);
 mRequest.send();
 
